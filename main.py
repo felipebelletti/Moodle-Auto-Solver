@@ -261,8 +261,6 @@ for curso in cursos:
 							checkboxes = d.find_elements_by_class_name("quantumWizTogglePapercheckboxInnerBox")
 							submitbutton = d.find_element_by_class_name("appsMaterialWizButtonPaperbuttonContent")						
 
-							#textboxes[idxnome].send_keys("Felipe Belletti") ############ nome aqui ############
-							#textboxes[idxturma].send_keys("1301") ############ turma aqui ############
 							nomealuno = raw_input("[gForms] Seu Nome: ")
 							turmaaluno = raw_input("[gForms] Sua Turma: ")
 							textboxes[idxnome].send_keys(nomealuno) ############ nome aqui ############
@@ -286,12 +284,3 @@ for curso in cursos:
 						d.get(url)
 
 d.quit()
-
-
-raw_input("\nvoce nao precisa tirar print da tela, eu nao vou fechar, juro :)")
-'''
-problemas do script:
-o ead de sociologia é super malfeito e entregou todas as atividades do ano numa vez só. oque o script faz?
-checka todas as boxes como se fossem novas, alem do mais, deveriam ser. its not my fault, culpa de sociologia
-nao tem oque fazer a nao ser criar um tratamento especial pra sociologia, e eu quero mais que isso se foda, ta funcionando logo ta ok
-'''
